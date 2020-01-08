@@ -1,0 +1,293 @@
+<DOCTYPE! html>
+
+<html>
+<head>
+
+<style>
+
+body {
+  background: #282828;/* match border color */
+  text-align: center;
+}
+
+
+#theform{
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: red;
+	padding:25px;
+}
+
+#heading{
+  font: 64px 'Arial Narrow', sans-serif;
+  color: #fefefe;
+  text-transform: uppercase;
+  letter-spacing: -4px;
+  background-color: #f21554;
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=date], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+	border-style: solid;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+	
+}
+
+#thelinks
+{
+	padding-top: 5px;
+	border-top: 2px dashed #046ca3;
+	border-bottom: 1px dashed #046ca3;
+        box-shadow: inset 0 -1px 0 0 #046ca3, inset 0 1px 0 0 #046ca3, 0 1px 0 0 #046ca3, 0 -1px 0 0 #046ca3;
+	margin-bottom: 1px;
+
+}
+
+
+a {
+  position: relative;
+  display: inline-block;
+  transition: .3s;
+  text-decoration: none;
+}
+
+a::after,
+a::before {
+  position: absolute;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: green;
+  opacity: 0;
+  transition: .3s;
+}
+
+a:hover::before {
+  top: 0;
+  opacity: 1;
+}
+
+a:hover::after {
+  bottom: 0;
+  opacity: 1;
+}
+
+a:hover {
+  color: green;
+}
+
+</style>
+  
+</head>
+
+<body>
+
+<html>
+<body>
+<div id="heading">
+
+Add Course Data:
+	
+</div>
+
+<div class="container">
+  <form action="addcoursedata.php" method="post">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Enter Course Name: </label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="coursename" placeholder="Course Name..">
+      </div>
+    </div>
+	
+<!--   <div class="row">
+      <div class="col-25">
+        <label for="lname">Designation: </label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="designation" placeholder="Designation..">
+      </div>
+    </div>  -->
+    
+	<div class="row">
+      <div class="col-25">
+        <label for="lname">Date: </label>
+      </div>
+      <div class="col-75">
+        <input type="date" id="date" name="date" placeholder="Designation..">
+      </div>
+    </div><br>        
+	
+	<div class="row">
+      <div class="col-25">
+        <label for="lname">Enter per slot details: </label>
+      </div>
+      <div class="col-75">
+	  
+       08:30-09:30<input type="text" id="lname" name="typea1" placeholder="Type A...">
+				  <input type="text" id="lname" name="typeb1" placeholder="Type B...">
+				  <input type="text" id="lname" name="typec1" placeholder="Type C...">
+				  
+	   09:30-10:30<input type="text" id="lname" name="typea2" placeholder="Type A...">
+				  <input type="text" id="lname" name="typeb2" placeholder="Type B...">
+				  <input type="text" id="lname" name="typec2" placeholder="Type C...">
+				  
+	   10:45-11:45<input type="text" id="lname" name="typea3" placeholder="Type A...">
+				  <input type="text" id="lname" name="typeb3" placeholder="Type B...">
+				  <input type="text" id="lname" name="typec3" placeholder="Type C...">
+				  
+	   11:45-12:45<input type="text" id="lname" name="typea4" placeholder="Type A...">
+				  <input type="text" id="lname" name="typeb4" placeholder="Type B...">
+				  <input type="text" id="lname" name="typec4" placeholder="Type C...">
+				  
+	   14:15-15:15<input type="text" id="lname" name="typea5" placeholder="Type A...">
+				  <input type="text" id="lname" name="typeb5" placeholder="Type B...">
+				  <input type="text" id="lname" name="typec5" placeholder="Type C...">
+				  
+	   15:30-16:30<input type="text" id="lname" name="typea6" placeholder="Type A...">
+				  <input type="text" id="lname" name="typeb6" placeholder="Type B...">
+				  <input type="text" id="lname" name="typec6" placeholder="Type C...">
+      </div>
+    </div><br><br>
+	
+<!--	<div class="row">
+      <div class="col-25">
+        <label for="country">Faculty Type</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="facultytype">
+          <option value="Gazetted Faculty">Gazetted Faculty</option>
+          <option value="Non Gazetted Faculty">Non Gazetted Faculty</option>
+          <option value="Non Gazetted Telecom Faculty">Non Gazetted Telecom Faculty</option>
+        </select>
+      </div>
+    </div><br> -->
+	
+	<div class="row">
+      <div class="col-25">
+        <label for="subject">Notice</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="notice" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div><br><br>
+	
+    <div class="row">
+      <input type="submit" value="Add Data">
+    </div><br><br>
+    
+  </form>
+  
+</div><br><br>
+
+<div id="heading">
+
+Remove Course Data:
+	
+</div>
+
+<div class="container">
+  <form action="removecoursedata.php" method="post">
+
+<div class="row">
+      <div class="col-25">
+        <label for="fname">Enter Course Name: </label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="coursename" placeholder="Course name..">
+      </div>
+ </div><br><br>
+ 
+ <div class="row">
+      <input type="submit" value="Remove">
+    </div><br><br>
+    
+ 
+ </form>
+  
+</div><br><br>
+	
+	
+
+<div id="thelinks">
+	<a href="afterlogin.html"><strong> Click here to go back </strong></a><br><br>
+</div>
+
+</body>
+</html>
+
+
+</body>
+</html>
+

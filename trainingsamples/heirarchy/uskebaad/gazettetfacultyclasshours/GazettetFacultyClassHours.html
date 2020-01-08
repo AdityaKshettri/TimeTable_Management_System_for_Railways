@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/tt/static/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/tt/static/css/print.css">
+    <link rel="stylesheet" href="/tt/static/DataTables/datatables.min.css">
+    <script src="/tt/static/js/jquery-3.2.1.min.js"></script>
+    <script src="/tt/static/DataTables/datatables.min.js"></script>
+    <script src="/tt/static/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+     function toLocalDate(str) {
+	 var tmp = str.split('-');
+	 var rv = tmp[2] + '-' + tmp[1] + '-' + tmp[0];
+	 return rv;
+     }
+    </script>
+    <title>Course Timetable</title>
+  </head>
+
+<body>
+  <div class="container">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+       
+      <h2>  Gazetted Faculty Class Hours</h2>
+      
+      <h4>
+	From: <script> document.write(toLocalDate('2018-05-23')); </script>
+	To: <script> document.write(toLocalDate('2018-05-23')); </script>
+      </h4>
+      <div class="table-responsive">
+	<table class="table table-striped" id="load_table">
+	  <thead>
+	    <tr>
+	      <th> # </th>
+	      <th> Name </th>
+	      <th> Designation </th>
+	      
+	      <th> Theory </th>
+	      <th> Lab </th>
+	      
+	      <th> Exam </th>
+	      <th> OHD </th>
+	      <th> Total </th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    
+	    
+	    
+	    <tr>
+	      <td> 1 </td>
+	      
+	      <td> SHRI L P SINHA  </td>
+	      <td> DIR </td>
+	      
+	      <td> 0 </td>
+	      <td> 0 </td>
+	      
+	      <td> 0 </td>
+	      <td> 0 </td>
+	      <td> 0</td>
+	    </tr>
+	    
+	    
+	    
+	    <tr>
+	      <td> 2 </td>
+	      
+	      <td> SMT. M.KALAVATHY  </td>
+	      <td> DEAN </td>
+	      
+	      <td> 0 </td>
+	      <td> 0 </td>
+	      
+	      <td> 0 </td>
+	      <td> 0 </td>
+	      <td> 0</td>
+	    </tr>
+	    
+	    
+	    
+	    <tr>
+	      <td> 3 </td>
+	      
+	      <td> SHRI P VENKATA RAMANA  </td>
+	      <td> SPS </td>
+	      
+	      <td> 2 </td>
+	      <td> 0 </td>
+	      
+	      <td> 0 </td>
+	      <td> 0 </td>
+	      <td> 2</td>
+	    </tr>
+	    
+	    
+	    
+	    <tr>
+	      <td> 4 </td>
+	      
+	      <td> SHRI ANUPAM KAPOOR  </td>
+	      <td> SPTRG </td>
+	      
+	      <td> 0 </td>
+	      <td> 0 </td>
+	      
+	      <td> 0 </td>
+	      <td> 0 </td>
+	      <td> 0</td>
+	    </tr>
+	    
+	    
+	    
+	    <tr>
+	      <td> 5 </td>
+	      
+	      <td> SHRI C CHANDRASEKHARA SASTRY  </td>
+	      <td> SPT </td>
+	      
+	      <td> 2 </td>
+	      <td> 0 </td>
+	      
+	      <td> 0 </td>
+	      <td> 0 </td>
+	      <td> 2</td>
+	    </tr>
+	    
+	    
+	    
+	    <tr>
+	      <td> 6 </td>
+	      
+	      <td> SHRI S.HARI  </td>
+	      <td> PT </td>
+	      
+	      <td> 0 </td>
+	      <td> 0 </td>
+	      
+	      <td> 0 </td>
+	      <td> 0 </td>
+	      <td> 0</td>
+	    </tr>
+	    
+	    
+	    
+	    <tr>
+	      <td> 7 </td>
+	      
+	      <td> SHRI T RAMESH BABU  </td>
+	      <td> PS1 </td>
+	      
+	      <td> 2 </td>
+	      <td> 0 </td>
+	      
+	      <td> 0 </td>
+	      <td> 0 </td>
+	      <td> 2</td>
+	    </tr>
+	    
+	    
+	    
+	    <tr>
+	      <td> 8 </td>
+	      
+	      <td> SHRI MANI VENKATA KUMAR K  </td>
+	      <td> PS2 </td>
+	      
+	      <td> 4 </td>
+	      <td> 0 </td>
+	      
+	      <td> 0 </td>
+	      <td> 0 </td>
+	      <td> 4</td>
+	    </tr>
+	    
+	    
+	    
+	    <tr>
+	      <td> 9 </td>
+	      
+	      <td> SHRI ALIMILI KALYAN KUMAR  </td>
+	      <td> PADMN </td>
+	      
+	      <td> 2 </td>
+	      <td> 0 </td>
+	      
+	      <td> 0 </td>
+	      <td> 0 </td>
+	      <td> 2</td>
+	    </tr>
+	    
+	    
+	    
+	    <tr>
+	      <td> 10 </td>
+	      
+	      <td> SHRI VIVEK CHAKRAVERTY  </td>
+	      <td> APTRG </td>
+	      
+	      <td> 0 </td>
+	      <td> 0 </td>
+	      
+	      <td> 0 </td>
+	      <td> 0 </td>
+	      <td> 0</td>
+	    </tr>
+	    
+	    
+	    
+	    
+	    
+	    <tr>
+	      <td> 11 </td>
+	      
+	      <td> SHRI S M HAFEEZ ALI  </td>
+	      <td> APT </td>
+	      
+	      <td> 2 </td>
+	      <td> 0 </td>
+	      
+	      <td> 0 </td>
+	      <td> 0 </td>
+	      <td> 2</td>
+	    </tr>
+	    
+	    
+	    
+	    <tr>
+	      <td> 12 </td>
+	      
+	      <td> SHRI M RAJ KUMAR  </td>
+	      <td> LS1 </td>
+	      
+	      <td> 2 </td>
+	      <td> 0 </td>
+	      
+	      <td> 0 </td>
+	      <td> 0 </td>
+	      <td> 2</td>
+	    </tr>
+	    
+	    
+	    
+	    <tr>
+	      <td> 13 </td>
+	      
+	      <td> SHRI P SREENIVASU  </td>
+	      <td> LS2 </td>
+	      
+	      <td> 1 </td>
+	      <td> 0 </td>
+	      
+	      <td> 0 </td>
+	      <td> 0 </td>
+	      <td> 1</td>
+	    </tr>
+	    
+	    
+	    
+	    <tr>
+	      <td> 14 </td>
+	      
+	      <td> SHRI  T T ANAND  </td>
+	      <td> EADIR </td>
+	      
+	      <td> 0 </td>
+	      <td> 0 </td>
+	      
+	      <td> 0 </td>
+	      <td> 0 </td>
+	      <td> 0</td>
+	    </tr>
+	    
+	    
+	    
+	    <tr>
+	      <td> 15 </td>
+	      
+	      <td> SHRI L BHUSHAIAH  </td>
+	      <td> ASDIR </td>
+	      
+	      <td> 0 </td>
+	      <td> 0 </td>
+	      
+	      <td> 0 </td>
+	      <td> 0 </td>
+	      <td> 0</td>
+	    </tr>
+	    
+	    
+	    
+	    <tr>
+	      <td> 16 </td>
+	      
+	      <td> SHRI S ANAND KUMAR  </td>
+	      <td> RBA </td>
+	      
+	      <td> 0 </td>
+	      <td> 0 </td>
+	      
+	      <td> 0 </td>
+	      <td> 0 </td>
+	      <td> 0</td>
+	    </tr>
+	    
+	    
+	  </tbody>
+	</table>
+      </div>
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+</body>
+
+<script>
+    $(document).ready( function() {
+	$('#load_table').dataTable();
+    });
+</script>
+
+</html>
